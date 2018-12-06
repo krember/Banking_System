@@ -11,9 +11,10 @@
 
 class AccountManager {
 private:
+    static AccountManager* instance;
+
     AccountDAO* accountDAO;
     AuthenticationManager *authenticationManager;
-    static AccountManager* instance;
 
     AccountManager();
 
@@ -21,8 +22,13 @@ public:
     static AccountManager* getInstance();
 
     Account getAccountInfo(std::string username) const;
-
     Account cashOut(unsigned cash);
+    Account cashIn(unsigned cash);
+    Account transfer(unsigned cash, std::string transferTo);
+    Account systemTransfer(unsigned cash, std::string transferFrom, std::string transferTo);
+    Account balance();
+    std::vector<Account> getAllSystemAccount();
+    unsigned long numberOfAccounts();
 };
 
 

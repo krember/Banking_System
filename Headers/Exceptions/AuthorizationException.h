@@ -9,9 +9,9 @@
 
 class AuthorizationException : public Exception {
 public:
-    AuthorizationException(const char * const desc);
-    AuthorizationException(std::string desc);
-    virtual std::string what();
+    explicit AuthorizationException(const char * const desc);
+    explicit AuthorizationException(std::string desc);
+    std::string what() override;
 };
 
 

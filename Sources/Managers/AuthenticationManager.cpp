@@ -8,7 +8,7 @@
 #include "../../Headers/Config/AuthConfig.h"
 #include "../../Headers/Exceptions/UserNotFoundException.h"
 
-static AuthenticationManager* AuthenticationManager::instance = 0;
+AuthenticationManager* AuthenticationManager::instance = 0;
 
 AuthenticationManager::AuthenticationManager() {
     accountDAO = AccountDAO::getInstance();

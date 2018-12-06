@@ -21,6 +21,8 @@ private:
 public:
     static BankingSystem* getInstance();
 
+    void initialize();
+
     void signIn(std::string username, std::string password);
     void createUser(std::string username, std::string password, std::string name, std::string lastName, bool system = false);
     Account getAccountInfo() const;

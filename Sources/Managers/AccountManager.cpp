@@ -6,8 +6,9 @@
 #include "../../Headers/Util/UserUtil.h"
 #include "../../Headers/Exceptions/AuthorizationException.h"
 #include "../../Headers/Util/Precondition.h"
+#include <vector>
 
-static AccountManager* AccountManager::instance = 0;
+AccountManager* AccountManager::instance = 0;
 
 AccountManager::AccountManager() {
     accountDAO = AccountDAO::getInstance();
@@ -34,4 +35,17 @@ Account AccountManager::cashOut(unsigned cash) {
 
     account.balance -= cash;
     accountDAO->updateAccount(authenticationManager->getActiveUsername(), account);
+}
+
+unsigned long AccountManager::numberOfAccounts() {
+    return accountDAO->getAllAccounts().size();
+}
+
+std::vector<Account> AccountManager::getAllSystemAccount() {
+    std::vector<Account> systems;
+    std::vector<Account> all;
+
+    std::copy_if(all.begin(), all.end(), std::back_inserter(systems),
+                 [](Account acc){return acc.permissions.find(Permissions::SYSTEM_ACTIONS) != acc.permissions.end();});
+    return systems;
 }

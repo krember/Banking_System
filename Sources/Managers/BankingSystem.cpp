@@ -3,12 +3,19 @@
 //
 
 #include "../../Headers/Managers/BankingSystem.h"
+#include <vector>
 
-static BankingSystem *BankingSystem::instance = 0;
+BankingSystem *BankingSystem::instance = 0;
 
 BankingSystem::BankingSystem() {
     authenticationManager = AuthenticationManager::getInstance();
     accountManager = AccountManager::getInstance();
+}
+
+void BankingSystem::initialize() {
+    if(!accountManager->getAllSystemAccount().empty()) {
+        authenticationManager->createUser("admin", "admin123", "admin", "admin", true);
+    }
 }
 
 BankingSystem *BankingSystem::getInstance() {
