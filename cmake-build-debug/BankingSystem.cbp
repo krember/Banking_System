@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="BankingSystem"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BankingSystem">
+				<Option output="/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/cmake-build-debug/BankingSystem" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 BankingSystem"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BankingSystem/fast">
+				<Option output="/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/cmake-build-debug/BankingSystem" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 BankingSystem/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/Headers/Config/AuthConfig.h">
+			<Option target="BankingSystem"/>
+		</Unit>
+		<Unit filename="/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/Headers/DAO/AccountDAO.h">
+			<Option target="BankingSystem"/>
+		</Unit>
+		<Unit filename="/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/Headers/Exceptions/AuthorizationException.h">
+			<Option target="BankingSystem"/>
+		</Unit>
+		<Unit filename="/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/Headers/Exceptions/Exception.h">
+			<Option target="BankingSystem"/>
+		</Unit>
+		<Unit filename="/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/Headers/Exceptions/InvalidArgumentException.h">
+			<Option target="BankingSystem"/>
+		</Unit>
+		<Unit filename="/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/Headers/Exceptions/RuntimeException.h">
+			<Option target="BankingSystem"/>
+		</Unit>
+		<Unit filename="/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/Headers/Exceptions/UserNotFoundException.h">
+			<Option target="BankingSystem"/>
+		</Unit>
+		<Unit filename="/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/Headers/Managers/AccountManager.h">
+			<Option target="BankingSystem"/>
+		</Unit>
+		<Unit filename="/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/Headers/Managers/AuthenticationManager.h">
+			<Option target="BankingSystem"/>
+		</Unit>
+		<Unit filename="/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/Headers/Managers/BankingSystem.h">
+			<Option target="BankingSystem"/>
+		</Unit>
+		<Unit filename="/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/Headers/Models/Account.h">
+			<Option target="BankingSystem"/>
+		</Unit>
+		<Unit filename="/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/Headers/Models/Credentials.h">
+			<Option target="BankingSystem"/>
+		</Unit>
+		<Unit filename="/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/Headers/Models/Permissions.h">
+			<Option target="BankingSystem"/>
+		</Unit>
+		<Unit filename="/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/Headers/Util/Precondition.h">
+			<Option target="BankingSystem"/>
+		</Unit>
+		<Unit filename="/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/Headers/Util/StringUtil.h">
+			<Option target="BankingSystem"/>
+		</Unit>
+		<Unit filename="/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/Headers/Util/UserUtil.h">
+			<Option target="BankingSystem"/>
+		</Unit>
+		<Unit filename="/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/Sources/DAO/AccountDAO.cpp">
+			<Option target="BankingSystem"/>
+		</Unit>
+		<Unit filename="/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/Sources/Exceptions/AuthorizationException.cpp">
+			<Option target="BankingSystem"/>
+		</Unit>
+		<Unit filename="/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/Sources/Exceptions/Exception.cpp">
+			<Option target="BankingSystem"/>
+		</Unit>
+		<Unit filename="/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/Sources/Exceptions/InvalidArgumentException.cpp">
+			<Option target="BankingSystem"/>
+		</Unit>
+		<Unit filename="/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/Sources/Exceptions/RuntimeException.cpp">
+			<Option target="BankingSystem"/>
+		</Unit>
+		<Unit filename="/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/Sources/Exceptions/UserNotFoundException.cpp">
+			<Option target="BankingSystem"/>
+		</Unit>
+		<Unit filename="/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/Sources/Managers/AccountManager.cpp">
+			<Option target="BankingSystem"/>
+		</Unit>
+		<Unit filename="/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/Sources/Managers/AuthenticationManager.cpp">
+			<Option target="BankingSystem"/>
+		</Unit>
+		<Unit filename="/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/Sources/Managers/BankingSystem.cpp">
+			<Option target="BankingSystem"/>
+		</Unit>
+		<Unit filename="/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/Sources/Models/Account.cpp">
+			<Option target="BankingSystem"/>
+		</Unit>
+		<Unit filename="/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/Sources/Models/Credentials.cpp">
+			<Option target="BankingSystem"/>
+		</Unit>
+		<Unit filename="/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/Sources/Models/Permissions.cpp">
+			<Option target="BankingSystem"/>
+		</Unit>
+		<Unit filename="/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/Sources/Util/Precondition.cpp">
+			<Option target="BankingSystem"/>
+		</Unit>
+		<Unit filename="/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/Sources/Util/StringUtil.cpp">
+			<Option target="BankingSystem"/>
+		</Unit>
+		<Unit filename="/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/Sources/Util/UserUtil.cpp">
+			<Option target="BankingSystem"/>
+		</Unit>
+		<Unit filename="/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/main.cpp">
+			<Option target="BankingSystem"/>
+		</Unit>
+		<Unit filename="/Users/nhovhannisya/Desktop/Classes/C++/Design_Patterns/BankingSystem/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
