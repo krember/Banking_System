@@ -24,9 +24,8 @@ public:
     Account getAccountInfo(std::string username) const;
     Account cashOut(unsigned cash);
     Account cashIn(unsigned cash);
-    Account transfer(unsigned cash, std::string transferTo);
-    Account systemTransfer(unsigned cash, std::string transferFrom, std::string transferTo);
-    Account balance();
+    void transfer(unsigned cash, std::string transferTo);
+    void systemTransfer(unsigned cash, std::string transferFrom, std::string transferTo);
     std::vector<Account> getAllSystemAccount();
     unsigned long numberOfAccounts();
 };

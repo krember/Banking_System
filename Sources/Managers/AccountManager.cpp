@@ -35,6 +35,50 @@ Account AccountManager::cashOut(unsigned cash) {
 
     account.balance -= cash;
     accountDAO->updateAccount(authenticationManager->getActiveUsername(), account);
+    return account;
+}
+
+Account AccountManager::cashIn(unsigned cash) {
+    Account account = accountDAO->getAccount(authenticationManager->getActiveUsername());
+
+    Precondition::checkArgument(cash > 0, "Cannot cash in negative amount");
+    Precondition::checkPrivilege(!UserUtil::isSystemAccount(account));
+
+    account.balance += cash;
+    accountDAO->updateAccount(authenticationManager->getActiveUsername(), account);
+    return account;
+}
+
+void AccountManager::transfer(unsigned cash, std::string transferTo) {
+    Account sender = accountDAO->getAccount(authenticationManager->getActiveUsername());
+    Account receiver = accountDAO->getAccount(transferTo);
+
+    Precondition::checkArgument(cash > 0, "Cannot transfer negative amount");
+    Precondition::checkPrivilege(!UserUtil::isSystemAccount(sender));
+    Precondition::checkPrivilege(!UserUtil::isSystemAccount(receiver));
+    Precondition::checkActionRequirment(sender.balance >= cash, "Your balance is not enough");
+
+    sender.balance -= cash;
+    receiver.balance += cash;
+    accountDAO->updateAccount(authenticationManager->getActiveUsername(), sender);
+    accountDAO->updateAccount(receiver.username, receiver);
+}
+
+void AccountManager::systemTransfer(unsigned cash, std::string transferFrom, std::string transferTo) {
+    Account activeUser = accountDAO->getAccount(authenticationManager->getActiveUsername());
+    Account receiver = accountDAO->getAccount(transferTo);
+    Account sender = accountDAO->getAccount(transferFrom);
+
+    Precondition::checkArgument(cash > 0, "Cannot transfer negative amount");
+    Precondition::checkPrivilege(UserUtil::isSystemAccount(activeUser));
+    Precondition::checkPrivilege(!UserUtil::isSystemAccount(sender));
+    Precondition::checkPrivilege(!UserUtil::isSystemAccount(receiver));
+    Precondition::checkActionRequirment(sender.balance >= cash, "Your balance is not enough");
+
+    sender.balance -= cash;
+    receiver.balance += cash;
+    accountDAO->updateAccount(authenticationManager->getActiveUsername(), sender);
+    accountDAO->updateAccount(receiver.username, receiver);
 }
 
 unsigned long AccountManager::numberOfAccounts() {
